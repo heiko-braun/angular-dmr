@@ -5,5 +5,5 @@
 angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.directives']).
   config(['$routeProvider', function($routeProvider) {
     $routeProvider.when('/jvm', {templateUrl: 'partials/jvm-view.html', controller: JvmCtrl});
-    $routeProvider.otherwise({redirectTo: '/view1'});
+    $routeProvider.otherwise({redirectTo: '/jvm'});
   }]);

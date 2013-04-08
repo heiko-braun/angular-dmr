@@ -3,9 +3,21 @@
 
     <button ng:click="load()">Load Data</button>
 
-    <!--span ng-bind="heap"></span-->
+    <table border>
+        <tr>
+            <th>Init</th>
+            <th>Used</th>
+            <th>Commited</th>
+            <th>Max</th>
+        </tr>
 
-    <form>
-        <textarea rows="6" cols="60" ng-model="heap"></textarea>
-    </form>
+        <tr>
+            <td ng-bind='heap.get("init")'></td>
+            <td ng-bind='heap.get("used")'></td>
+            <td ng-bind='heap.get("committed")'></td>
+            <td ng-bind='heap.get("max")'></td>
+        </tr>
+
+    </table>
+
 </div>
