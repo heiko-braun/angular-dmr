@@ -1,3 +1,11 @@
-<p>JVM View</p>
+<div ng-controller="JvmCtrl">
+    <p>JVM View</p>
 
-<button ng:click="load()">Load Data</button>
+    <button ng:click="load()">Load Data</button>
+
+    <!--span ng-bind="heap"></span-->
+
+    <form>
+        <textarea rows="6" cols="60" ng-model="heap"></textarea>
+    </form>
+</div>
