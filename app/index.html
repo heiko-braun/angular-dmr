@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>Angular DMR Demo</title>
+  <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body>
+  <ul class="menu">
+    <li><a href="#/jvm">jvm</a></li>
+
+  </ul>
+
+  <div ng-view></div>
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.min.js"></script>
+  -->
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/dmr/dmr.js.nocache.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+</body>
+</html>
